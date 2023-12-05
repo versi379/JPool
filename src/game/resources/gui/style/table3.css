@@ -1,0 +1,7 @@
+.table {
+    -fx-fill: #792525;
+}
+
+.bank {
+    -fx-image: url("WoodBlack.png");
+}

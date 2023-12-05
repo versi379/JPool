@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #122335;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.logic.SettingsController">
+   <children>
+      <Pagination fx:id="tableMenu" layoutX="50.0" layoutY="200.0" pageCount="4" prefHeight="300.0" prefWidth="600.0" />
+      <Pagination fx:id="cueMenu" layoutX="50.0" layoutY="600.0" pageCount="10" prefHeight="150.0" prefWidth="600.0" />
+      <Pagination fx:id="modeMenu" layoutX="750.0" layoutY="200.0" pageCount="2" prefHeight="300.0" prefWidth="300.0" />
+      <Button fx:id="playButton" layoutX="1270.0" layoutY="720.0" mnemonicParsing="false" onAction="#handlePlayButton" prefHeight="50.0" prefWidth="100.0" styleClass="orange-button" text="PLAY">
+         <font>
+            <Font name="Futura Medium" size="15.0" />
+         </font></Button>
+      <Button fx:id="menuButtonFromSettings" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleMenuFromSettings" prefHeight="50.0" prefWidth="100.0" styleClass="orange-button" text="MENU">
+         <font>
+            <Font name="Futura Medium" size="15.0" />
+         </font></Button>
+      <TextField fx:id="player1Nickname" layoutX="1150.0" layoutY="200.0" prefHeight="40.0" prefWidth="200.0" promptText="Giocatore 1" />
+      <TextField fx:id="player2Nickname" layoutX="1150.0" layoutY="250.0" prefHeight="40.0" prefWidth="200.0" promptText="Giocatore 2" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="125.0" prefHeight="50.0" prefWidth="600.0" styleClass="settings" text="1. TAVOLO" textAlignment="CENTER" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="525.0" prefHeight="50.0" prefWidth="600.0" styleClass="settings" text="2. STECCA" textAlignment="CENTER" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="750.0" layoutY="125.0" prefHeight="50.0" prefWidth="300.0" styleClass="settings" text="3.  MODALITA'" textAlignment="CENTER" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="750.0" layoutY="525.0" prefHeight="50.0" prefWidth="300.0" styleClass="settings" text="4. EFFETTI SONORI" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="soundButton" layoutX="750.0" layoutY="600.0" mnemonicParsing="false" onAction="#handleSoundButton" prefHeight="50.0" prefWidth="150.0" styleClass="orange-button" text="SOUNDS">
+         <font>
+            <Font name="Futura Medium" size="15.0" />
+         </font></Button>
+      <Label fx:id="soundLabel" alignment="CENTER" layoutX="900.0" layoutY="600.0" prefHeight="50.0" prefWidth="150.0" styleClass="settings" text="ON" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="1150.0" layoutY="125.0" prefHeight="50.0" prefWidth="200.0" styleClass="settings" text="5. NOMI " textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+      <Button fx:id="coinButton" layoutX="1175.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleCoinButton" prefHeight="50.0" prefWidth="150.0" styleClass="orange-button" text="LANCIA">
+         <font>
+            <Font name="Futura Medium" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="splitPlayerLabel" alignment="CENTER" layoutX="1125.0" layoutY="600.0" prefHeight="50.0" prefWidth="250.0" styleClass="settings" textAlignment="CENTER" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="1150.0" layoutY="310.0" prefHeight="50.0" prefWidth="200.0" styleClass="settings" text="6. TESTA O CROCE" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+   </children>
+</Pane>
